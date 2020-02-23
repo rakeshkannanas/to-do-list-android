@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#ffffff"
+
+    >
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="#ffffff"
+        app:cardElevation="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="1dp"
+        android:id="@+id/relative">
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+
+                android:id="@+id/rel"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DATA"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/date"
+                    android:singleLine="true"
+                    android:id="@+id/data"
+                    android:textSize="20sp"
+                    android:maxLines="15"
+                    android:ellipsize="marquee"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:id="@+id/date"
+
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_alignParentRight="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ID"
+                    android:visibility="invisible"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+
+                    android:id="@+id/time"
+                    android:layout_below="@+id/date"
+                    android:paddingTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+

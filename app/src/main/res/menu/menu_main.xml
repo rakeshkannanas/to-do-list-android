@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.kannan.todohometask.Activity.MainActivity">
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="100"
+        android:title="Delete"
+        app:showAsAction="never" />
+</menu>
